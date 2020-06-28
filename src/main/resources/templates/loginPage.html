@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<title>Welcome to UK app</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../static/css/MainCssFile.css"
+          th:href="@{css/MainCssFile.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+	<div id="Login-Container">
+		<h2 id="login-signUp-heading">Login/SignUp</h2>
+		<form action='/login' method="post">
+			<input type='text' name='email' placeholder="Email"></input> <span class='errors' th:text="${emailError}"></span>
+			<input type="password" name="password" placeholder="Secret Key"></input><span class='errors' th:text="${passwordError}"></span>
+			<input type='submit' class="button login-buttons" id="login-button" value='Login'></input>
+		</form>
+		
+		<a href="/registerUser" class="button login-buttons" id="signUP-button">Don't
+			have account,SignUp</a>
+
+	</div>
+</body>

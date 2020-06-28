@@ -1,0 +1,134 @@
+@charset "ISO-8859-1";
+
+
+
+h1{
+    margin: auto;
+    text-align: center;
+    opacity: 0.8;
+    font-family: sans-serif;
+    
+}
+
+#div-button{
+ 
+    
+    margin: 0px auto;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+
+}
+.button{
+    margin-bottom:30px;
+    margin-left: calc(50% - 100px);
+    text-align: center;
+    color: white;
+    width: 200px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background-color: grey;
+    line-height: 30px;
+    text-decoration: none;
+}
+#div-table{
+    margin:100px auto;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+   
+}
+table{
+    width:100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+
+th,td{
+    font-size: large;
+    border: 2px solid black;
+    width:25%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    
+    
+}
+th{
+   font-size: x-large;
+   font-family: cursive;
+   font-weight: bolder;
+}
+#add-user-button{
+    margin-top: 100px;
+    margin-left:calc(50% - 100px);
+    
+}
+#div-input-form{
+    border-radius: 40px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    margin:50px auto;
+    width:600px;
+}
+input{
+    margin-left:2.5%;
+    margin-bottom:30px;
+    width:50%;
+    line-height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: black;
+    
+    
+}
+::placeholder {
+    color: black;
+    opacity: 0.7;
+     
+  }
+input:hover{
+    background-color:rgb(233, 159, 21);
+   
+}
+#submit-detail-button{
+    margin-left:calc(50% - 100px);
+}
+#Login-Container{
+    border-radius: 40px;
+    background-color: bisque;
+    margin:50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.login-buttons{
+    margin-left: 25%;
+    width: 50%;
+}
+#login-signUp-heading{
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: fantasy;
+    font-weight: normal;
+
+}
+.errors{
+	  
+    
+    
+    line-height: 20px;
+    
+    text-align: center;
+    font-size: large;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: black;
+}

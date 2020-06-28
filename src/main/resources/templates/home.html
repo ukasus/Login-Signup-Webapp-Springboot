@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<title>Welcome to UK app</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../static/css/MainCssFile.css"
+	th:href="@{css/MainCssFile.css}" rel="stylesheet" media="screen" />
+</head>
+<body>
+<pre><h1>Welcome <span  th:text="${userName}"></span></h1>  </pre>
+	<div id='div-table'>
+
+		<table>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Phone Number</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr th:each="user: ${users}">
+					<td th:text="${user.firstName}" />
+					<td th:text="${user.lastName}" />
+					<td th:text="${user.email}" />
+					<td th:text="${user.phoneNumber}" />
+				</tr>
+
+			</tbody>
+		</table>
+
+		<a href="/logout" id="add-user-button" class="button">Logout
+			</a>
+	</div>
+
+</body>
+</html>
