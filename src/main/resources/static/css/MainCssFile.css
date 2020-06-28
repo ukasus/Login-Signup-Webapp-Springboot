@@ -72,7 +72,7 @@ th{
     display: flex;
     flex-direction: column;
     margin:50px auto;
-    width:600px;
+    width:70%;
 }
 input{
     margin-left:2.5%;
@@ -106,7 +106,7 @@ input:hover{
     margin:50px auto;
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 70%;
 }
 .login-buttons{
     margin-left: 25%;
@@ -123,12 +123,12 @@ input:hover{
 .errors{
 	  
     
-    
-    line-height: 20px;
+    width:
+    line-height: 15px;
     
     text-align: center;
     font-size: large;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-weight: bold;
     color: black;
 }
